@@ -15,6 +15,8 @@ stage2 = True
 
 while True:
     print(linha)
+    print('CADASTRE UMA PESSOA')
+    print(linha)
     while stage1:
         sexo = str(input('Masculino ou feminino [M / F]').strip())
         if sexo.lower() == 'm' or sexo.lower() == 'f':
