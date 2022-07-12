@@ -10,7 +10,7 @@
 
 produto = ''
 valor = 0 
-menor = 1000000
+menor = 0
 menorNome = ''
 total = 0
 maisdemil = 0
@@ -20,14 +20,14 @@ linha = 25 * '- '.replace(' ','=')
 while True:
     while True:
         produto = str(input('Qual o nome do produto: '))
-        valor = input('Qual o valor do produto: ')
+        valor = input('Qual o valor do produto: R$')
         try:
             valor = int(valor)
             break
         except ValueError:
             print('digite um valor valido')
     
-    if valor < menor:
+    if valor < menor or menor == 0:
         menor = valor
         menorNome = produto
 
