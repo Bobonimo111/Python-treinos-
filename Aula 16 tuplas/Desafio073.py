@@ -25,5 +25,5 @@ print(sorted(Cbraisileiro))
 
 #Em que posição está a chapecoence... como não tem chapecoence vou no Flamengo
 print(linha)
-print('A posição do flamengo na lista é a {} \n'.format(Cbraisileiro.index('Flamengo')+1))
+print('A posição do flamengo na lista é a {}ª \n'.format(Cbraisileiro.index('Flamengo')+1))
 
