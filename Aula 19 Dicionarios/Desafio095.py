@@ -4,12 +4,23 @@
 # Dar a opção do usuario procurar por mais detalhes usando o codigo, do jogardor
 
 
+CadDic = list()  #Lista principal onde tudo será adicionado
+JogInf = dict()  #Dicionario onde serão adicionadas as informações do jogador
+gols = list()    #lista de gols por partida na ordem
+
 CadDic = {'nome':'joelson','partidas': 5,'golsPartida': [1,3,0,0,0]} , {'nome':'messi','partidas': 4,'golsPartida': [0,1,1,0]}
-JogInf = dict()
 
 while True:
     JogInf['nome'] = str(input('Jogador nome: ').strip().lower())
-    JogInf['partidas'] = int(input('Quantidade de partidas: '))
+    try:
+        JogInf['partidas'] = int(input('Quantidade de partidas: '))
+    except ValueError:
+        while True:
+            try:
+                JogInf['partidas'] = int(input('Quantidade de partidas: '))
+            except ValueError:
+                print('Valor não numerico tente novamente')
 
-
-    JogInf['golsPartida']
+    for x in range(0,JogInf['partidas']):
+        gols.append(f'{x}º jogo: ')
+    JogInf['golsPartida'] = gols[:]
