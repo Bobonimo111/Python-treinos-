@@ -1,6 +1,15 @@
 #Criar uma função que realize uma contagem numerica, recebendo três paramentro inicio, fim e passo
 def contador(inicio,fim,passo):
     cont = inicio
+
+    if(passo < 0):
+        passo = -(passo)
+        print(passo)
+    elif(passo == 0 or passo == None):
+        passo = 1
+    
+        
+
     print('\n')
     print('=-'*40)
     print(f'A contagem de {inicio} até {fim} de {passo} em {passo} ')
@@ -18,6 +27,7 @@ def contador(inicio,fim,passo):
             if(cont < fim):
                 break
             
+
             print(f'{cont} ',end='')
             cont = cont - passo    
             
