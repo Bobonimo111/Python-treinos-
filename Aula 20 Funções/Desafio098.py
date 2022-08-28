@@ -1,4 +1,7 @@
 #Criar uma função que realize uma contagem numerica, recebendo três paramentro inicio, fim e passo
+from time import sleep
+
+
 def contador(inicio,fim,passo):
     cont = inicio
 
@@ -19,8 +22,10 @@ def contador(inicio,fim,passo):
             if(cont > fim):
                 break
             
-            print(f'{cont} ',end='')
-            cont = cont + passo        
+            print(f'{cont} ',end='',flush=True)
+            sleep(0.5)
+            cont = cont + passo  
+
 
     elif(inicio > fim):
         while(True):
@@ -28,7 +33,8 @@ def contador(inicio,fim,passo):
                 break
             
 
-            print(f'{cont} ',end='')
+            print(f'{cont} ',end='',flush=True)
+            sleep(0.5)
             cont = cont - passo    
             
 
