@@ -6,6 +6,11 @@ from random import randint
 fps = 0.5
 
 def Sorteia(quant):
+    """
+    -> sorteia uma lista de numeros aleatorio
+    :param quant: A quantidade de numeros aleatorios a serem sorteados
+    :return: Uma lista
+    """
     Rand_lista = list()
     print(f'Sorteando {quant} valores da lista: ',end='')
     for i in range(0,quant):
@@ -26,3 +31,5 @@ def SomaPar(nuns):
 
 
 SomaPar(Sorteia(5))
+
+help(Sorteia)
